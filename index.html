@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Villor nära Magaluf – 14–21 juni 2027</title>
+<style>
+  :root{
+    --bg:#f6f4ef; --card:#ffffff; --ink:#1d2327; --muted:#5d666d; --line:#e2ded5;
+    --accent:#0f6e6e; --ok:#1f7a44; --ok-bg:#e3f3e8; --ask:#8a5a00; --ask-bg:#fcefd2;
+    --no:#a3282d; --no-bg:#fbe4e4; --chip:#eef1f1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#14181a; --card:#1d2326; --ink:#ecefef; --muted:#a3adb2; --line:#2e373b;
+      --accent:#5cc7c2; --ok:#7ad69b; --ok-bg:#173524; --ask:#f0c56a; --ask-bg:#3a2e12;
+      --no:#f09a9d; --no-bg:#3d1c1e; --chip:#283033;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{max-width:1240px;margin:0 auto;padding:36px 20px 8px}
+  h1{font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.15;margin:0 0 8px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin:0 0 18px;max-width:70ch}
+  .verdict{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
+    border-radius:10px;padding:16px 18px;margin:0 0 18px;max-width:900px}
+  .verdict h2{font-size:1.05rem;margin:0 0 6px}
+  .verdict ol{margin:6px 0 0;padding-left:20px}
+  .verdict li{margin:4px 0}
+  .bar{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin:8px 0 4px}
+  .bar span.lbl{color:var(--muted);font-size:.9rem}
+  .bar button{font:inherit;font-size:.9rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line);
+    background:var(--card);color:var(--ink);cursor:pointer}
+  .bar button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  @media (prefers-color-scheme: dark){.bar button[aria-pressed="true"]{color:#0c1a1a}}
+  main{max-width:1240px;margin:0 auto;padding:12px 20px 30px;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px}
+  article{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    display:flex;flex-direction:column}
+  a.cover{display:block;position:relative;aspect-ratio:16/10;background:var(--chip);overflow:hidden}
+  a.cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}
+  a.cover:hover img{transform:scale(1.03)}
+  a.cover .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:16px;color:var(--muted);font-size:.95rem;gap:4px}
+  a.cover .ph b{color:var(--ink);font-size:1.1rem}
+  a.cover .go{position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.68);color:#fff;font-size:.8rem;
+    padding:4px 10px;border-radius:999px}
+  .dist{padding:10px 16px;border-bottom:1px solid var(--line);font-weight:600;font-variant-numeric:tabular-nums}
+  .dist small{font-weight:400;color:var(--muted);display:block}
+  .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+  h3{font-size:1.15rem;margin:0;line-height:1.25}
+  .place{color:var(--muted);font-size:.9rem;margin-top:2px}
+  .badge{display:inline-block;font-size:.85rem;font-weight:600;padding:5px 10px;border-radius:8px}
+  .ok{background:var(--ok-bg);color:var(--ok)} .ask{background:var(--ask-bg);color:var(--ask)} .no{background:var(--no-bg);color:var(--no)}
+  dl{margin:0;display:grid;grid-template-columns:118px 1fr;gap:6px 10px;font-size:.92rem}
+  dt{color:var(--muted)} dd{margin:0}
+  .warn{font-size:.9rem;background:var(--chip);border-radius:8px;padding:8px 10px}
+  .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+  .links a{font-size:.88rem;text-decoration:none;color:var(--accent);border:1px solid var(--accent);
+    padding:5px 11px;border-radius:999px}
+  .links a:hover{background:var(--accent);color:var(--card)}
+  footer{max-width:900px;margin:0 auto;padding:0 20px 50px;color:var(--muted);font-size:.88rem}
+  footer h2{font-size:1rem;color:var(--ink)}
+  footer li{margin:4px 0}
+</style>
+</head>
+<body>
+<header>
+  <h1>Villor nära Magaluf</h1>
+  <p class="sub">10 vuxna (18–19 år) · 14–21 juni 2027 · budget högst 7 000 €, helst under 6 000 €. De 13 länkarna visade sig vara 10 olika villor. Klicka på bilden för att öppna annonsen.</p>
+ 
+  <section class="verdict">
+    <h2>Slutsats: tre villor kan fungera, en är oklar, sex faller bort</h2>
+    <ol>
+      <li><b>Villa Francisca</b> (Palmanova) – 3 km från Magaluf centrum, pool, ingen åldersgräns i annonsen. Dyrare än Villa Anfos, men nästan ingen taxikostnad. Fråga värden först.</li>
+      <li><b>Villa Anfos</b> (Can Pastilla) – billigast och utan åldersgräns, men 27 km bort och under inflygningen till flygplatsen.</li>
+      <li><b>Bon Jardi</b> (Esporles) – ungdomsgrupper uttryckligen tillåtna, men tyst redan kl. 21, 26 km bort och lågt betyg.</li>
+    </ol>
+  </section>
+ 
+  <div class="bar" role="group" aria-label="Filter">
+    <span class="lbl">Visa:</span>
+    <button data-f="all" aria-pressed="true">Alla (10)</button>
+    <button data-f="open" aria-pressed="false">Möjliga för er</button>
+    <button data-f="no" aria-pressed="false">Faller bort</button>
+    <span class="lbl" style="margin-left:10px">Sortera:</span>
+    <button data-s="fit" aria-pressed="true">Passar bäst</button>
+    <button data-s="dist" aria-pressed="false">Närmast Magaluf</button>
+    <button data-s="price" aria-pressed="false">Lägst pris</button>
+  </div>
+</header>
+ 
+<main id="grid"></main>
+ 
+<footer>
+  <h2>Så har uppgifterna tagits fram</h2>
+  <ul>
+    <li>Alla annonser lästes 11 november 2026 med datumen 14–21 juni 2027 och 10 vuxna. Priser och tillgänglighet kan ändras.</li>
+    <li>Holidu släppte inte fram priset till mig (robotkontroll). Där samma villa finns på Booking.com visas Booking-priset i stället.</li>
+    <li>Priser i kronor är omräknade med ungefär 11 kr per euro och är därför avrundade.</li>
+    <li>Avstånd är körsträcka till Punta Ballena-området i Magaluf enligt ruttberäkning utan trafik. För villan i Cas Català är läget ungefärligt.</li>
+    <li>Taxi per kväll är min beräkning: tre bilar tur och retur med kvällstaxan (ca 2,85 € start + 1,35 €/km). Väntetid och trafik tillkommer.</li>
+    <li>”Ingen åldersgräns” betyder att annonsen inte anger någon. Det är inget löfte från värden – skriv och få det bekräftat innan ni betalar.</li>
+    <li>Turistskatt på Balearerna (ca 2,20 € per person och natt, ungefär 154 € för er) betalas oftast kontant på plats och ingår inte alltid i priset.</li>
+  </ul>
+</footer>
+ 
+<script>
+const D = "checkin=2027-06-14&checkout=2027-06-21";
+const B = s => `https://www.booking.com/hotel/es/${s}.sv.html?${D}&group_adults=10&req_adults=10&no_rooms=1&group_children=0`;
+const H = id => `https://www.holidu.es/d/${id}?${D}&adults=10`;
+const A = id => `https://www.airbnb.se/rooms/${id}?adults=10&check_in=2027-06-14&check_out=2027-06-21`;
+const BI = (h,id,k) => `https://${h}-xx.bstatic.com/xdata/images/hotel/1200x630/${id}.jpg?k=${k}&o=`;
+ 
+const villas = [
+ {fit:1, st:"ask", name:"Villa Francisca", place:"Palmanova", km:3.1, min:5, taxi:40, eur:6800,
+  img:["https://a0.muscache.com/im/pictures/hosting/Hosting-7297898/original/296ca03f-b452-4158-8487-2100865aa6ca.jpeg?im_w=960"],
+  links:[["Airbnb",A("7297898")]],
+  badge:"18-åringar: ingen åldersgräns angiven – fråga värden",
+  age:"Annonsen anger ingen åldersgräns. En gäst rekommenderar villan särskilt för grupper av unga.",
+  quiet:"23:00–09:00. Ingen musik i trädgården efter 22:00.",
+  party:"Inte tillåtet. Regelbrott kan ge omedelbar avbokning.",
+  pool:"Ja, privat (10 × 5 m)",
+  cap:"12 gäster · 6 sovrum med dubbelsäng · 2 badrum",
+  price:"74 775 kr (≈ 6 800 €) på Airbnb, rabatterat från 83 958 kr",
+  dep:"Ej angiven",
+  cancel:"Gratis före 15 maj, delvis återbetalning före 7 juni",
+  rating:"4,69 av 5 (288 omdömen), Superhost",
+  extra:"Turistskatt ca 154 € kontant. Incheckning efter 20:00 kostar 40 €.",
+  warn:"Bara två badrum för tio personer. Stranden i Palmanova ligger 200 m bort, och till Magaluf centrum är det ca 35–40 min till fots."},
+ 
+ {fit:2, st:"ok", name:"Villa Anfos", place:"Can Pastilla, Palma", km:26.8, min:25, taxi:235, eur:5085,
+  img:["https://a0.muscache.com/im/pictures/hosting/Hosting-1604192359997256935/original/3c092c62-4933-4ed1-873b-45a4e2a27825.jpeg?im_w=960",
+       BI("q","868886164","9730c1c2db773e321e84db4133def2a346bcac8d28b7d6d1cee9a3dc15e2ee6c")],
+  links:[["Airbnb",A("1604192359997256935")],["Booking.com",B("villa-anfos-palma-de-mallorca")],["Holidu",H("69437295")]],
+  badge:"18-åringar: OK – ingen åldersgräns (Booking.com)",
+  age:"Booking.com anger uttryckligen att det inte finns något ålderskrav. Airbnb och Holidu nämner ingen gräns.",
+  quiet:"22:00–09:00 obligatorisk tystnad. Hög musik är inte tillåten dagtid heller.",
+  party:"Inte tillåtet.",
+  pool:"Ja, privat (enligt Airbnb och Holidu; Booking nämner den inte)",
+  cap:"10 gäster · 5 sovrum · 4 badrum · 4 dubbelsängar + 2 enkelsängar",
+  price:"Airbnb 58 467 kr (≈ 5 300 €). Booking 5 085 € ej återbetalningsbart eller 5 594 € med fri avbokning.",
+  dep:"1 200 €",
+  cancel:"Gratis före 15 maj 2027 (Airbnb och Bookings flexibla pris)",
+  rating:"Airbnb 4,6 av 5 (10 omdömen) · Booking 9,7 (3 omdömen)",
+  extra:"Turistskatt ca 154 € kontant vid ankomst.",
+  warn:"Ligger under inflygningen till flygplatsen – en gäst beskriver flygplan varannan minut. Omdömen nämner också avbrott i vatten och ström. Åtta av er får dela dubbelsäng."},
+ 
+ {fit:3, st:"ok", name:"Bon Jardi", place:"Esporles (Ses Rotgetes de Canet)", km:25.6, min:25, taxi:225, eur:6067,
+  img:["https://img.holidu.com/images/d1b36e5e-5663-4fd7-a9fb-b1c83fe6fd91/t.jpg",
+       BI("q","852064423","99dc1a2ce42600e02f0eaadc36262988df43add4f26c813316a420cdd3bfcd6b")],
+  links:[["Holidu",H("62175328")],["Booking.com",B("bon-jardi")]],
+  badge:"18-åringar: OK – ungdomsgrupper tillåtna",
+  age:"Holidu: ”ungdomsgrupper tillåtna”. Booking.com: inget ålderskrav.",
+  quiet:"21:00–09:00 (Booking.com).",
+  party:"Ej angivet i annonsen.",
+  pool:"Ja, privat",
+  cap:"10–11 gäster · 6 sovrum · 9 enkelsängar + 1 dubbelsäng · huvudhus plus separat lägenhet",
+  price:"Booking 6 067 € ej återbetalningsbart eller 7 203 € med fri avbokning. Holidu-priset kunde inte läsas.",
+  dep:"800 €",
+  cancel:"Gratis före 31 maj 2027 på Bookings flexibla pris",
+  rating:"Booking 6,3 (9 omdömen)",
+  extra:"El ingår upp till 50 €, därefter 0,35 €/kWh. Turistskatt 2 € per person och natt.",
+  warn:"Tyst redan kl. 21. Lantligt läge – en gäst skriver att det inte går utan bil. Lägst betyg av alla tio."},
+ 
+ {fit:4, st:"ask", name:"Villa i Cas Català", place:"Cas Català, Calvià (nära Puerto Portals)", km:9, min:11, taxi:90, eur:null, approx:true,
+  img:["https://img.holidu.com/images/6dc909b3-2ea6-4538-a932-a214fb2208a5/t.jpg"],
+  links:[["Holidu",H("60282192")]],
+  badge:"18-åringar: oklart – reglerna står inte i annonsen",
+  age:"Annonsen säger inget om ålder, grupper eller fester. Bokningen sköts av Expedia, så reglerna måste läsas i bokningssteget eller frågas om.",
+  quiet:"Ej angivet.",
+  party:"Ej angivet.",
+  pool:"Ja, privat",
+  cap:"10 gäster · 5 sovrum · 4 badrum · 400 m²",
+  price:"Kunde inte läsas (Holidu spärrade mig). Din länk var inställd på 2 vuxna – sök om med 10.",
+  dep:"Ej angiven",
+  cancel:"Ej angivet",
+  rating:"9,9 (49 omdömen)",
+  extra:"",
+  warn:"Lyxområde där villor i samma storlek ofta har 25-årsgräns. Räkna inte med den förrän reglerna är bekräftade."},
+ 
+ {fit:5, st:"no", name:"Villa Torrenova 36", place:"Magaluf", km:1.5, min:4, taxi:30, eur:8493,
+  img:[BI("r","256198759","b40499d948696b6d4060aa446361f9c0bdb8c83c67e4d9a1196cd73cd9a1354e")],
+  links:[["Booking.com","https://www.booking.com/hotel/es/torrenova-36-villa.sv.html?"+D+"&group_adults=8&req_adults=8&no_rooms=1&group_children=0"]],
+  badge:"Faller bort: rymmer högst 8 personer",
+  age:"Minimiålder 18 – ni hade alltså fått bo här, men villan tar bara 8.",
+  quiet:"23:00–12:00.",
+  party:"Ej angivet.",
+  pool:"Ja, privat, plus jacuzzi",
+  cap:"8 gäster · 3 sovrum (6 enkelsängar) + 2 bäddsoffor · 4 badrum",
+  price:"8 493 € för 8 personer",
+  dep:"500 € på kreditkort vid ankomst",
+  cancel:"Gratis före 15 maj 2027",
+  rating:"9,3 (17 omdömen)",
+  extra:"",
+  warn:"Det enda boendet på gångavstånd från Magaluf (3 min till stranden), men för litet och över budget."},
+ 
+ {fit:6, st:"no", name:"Villa Bahia de Palma", place:"Cala Vinyes", km:2.6, min:7, taxi:40, eur:6756,
+  img:["https://a0.muscache.com/im/pictures/39898fc9-bf61-446d-b8b0-7bd55d9c39e0.jpg?im_w=960"],
+  links:[["Airbnb",A("16195090")]],
+  badge:"Faller bort: ”endast för familjer”",
+  age:"Annonsens rubrik anger att villan bara hyrs ut till familjer.",
+  quiet:"Inget buller efter midnatt. Brott kan ge omedelbar avbokning.",
+  party:"Inte tillåtet.",
+  pool:"Ja",
+  cap:"12 gäster · 6 sovrum · 4 badrum · 280 m²",
+  price:"74 316 kr (≈ 6 750 €) på Airbnb",
+  dep:"Ej angiven",
+  cancel:"Gratis i 24 timmar, delvis återbetalning före 7 juni",
+  rating:"4,87 av 5 (71 omdömen)",
+  extra:"El ingår inte i priset. Övervakningskameror utomhus.",
+  warn:""},
+ 
+ {fit:7, st:"no", name:"Villa Rivo", place:"Costa de la Calma", km:8.3, min:11, taxi:85, eur:5829,
+  img:["https://media.vrbo.com/lodging/83000000/82880000/82871300/82871247/15a81187.jpg?impolicy=resizecrop&rw=598&ra=fit",
+       BI("r","692127783","9e5369b977de6ca54f915e182b2f04abbf54f99b6b176f49c1370d48d57a764d")],
+  links:[["Vrbo","https://www.vrbo.com/sv-se/semesterhus/p11094171?chkin=2027-06-14&chkout=2027-06-21&d1=2027-06-14&d2=2027-06-21&startDate=2027-06-14&endDate=2027-06-21&adults=10"],["Booking.com",B("villa-rivo-costa-de-la-calma")]],
+  badge:"Faller bort: ungdomsgrupper accepteras inte",
+  age:"Annonsen: bara familjer eller lugna, ansvarsfulla grupper. ”Grupper av ungdomar accepteras inte.”",
+  quiet:"20:00–10:00 (Booking.com).",
+  party:"Inte tillåtet.",
+  pool:"Nej – egen stig ner till havet (20 m)",
+  cap:"10 gäster · 5 sovrum · 10 enkelsängar · 3 badrum + 1 toalett",
+  price:"Vrbo 64 119 kr inkl. skatter (≈ 5 830 €). Booking 6 270 €.",
+  dep:"500 €",
+  cancel:"Gratis före 15 maj 2027",
+  rating:"Vrbo 10 av 10 (21 omdömen)",
+  extra:"Sen incheckning kostar 50–150 €.",
+  warn:"Byggarbete på granntomten under 2026 enligt annonsen."},
+ 
+ {fit:8, st:"no", name:"Villa Camp de Mar Sea View", place:"Camp de Mar, Andratx", km:15.9, min:18, taxi:145, eur:6190,
+  img:["https://img.holidu.com/images/8d53f33d-ede7-4647-aee6-3eb97ee70f67/t.jpg",
+       BI("r","291896130","8e6600f2c692b174b203623cbcb02fc692242dde11dfda06a6395ec42f293d37")],
+  links:[["Holidu",H("45096681")],["Booking.com",B("villa-camp-de-mar-sea-view")]],
+  badge:"Faller bort: ungdomsgrupper accepteras inte",
+  age:"Holidu: ”ungdomsgrupper ej tillåtna”, bara familjer eller lugna grupper. Booking anger minimiålder 18, men uthyrarens egen regel väger tyngst.",
+  quiet:"22:00–09:00, inget ljud alls.",
+  party:"Inte tillåtet.",
+  pool:"Ja, privat saltvattenpool",
+  cap:"10 gäster · 3 sovrum + 2 bäddsoffor · 3 badrum · 500 m²",
+  price:"Booking 6 190 €. Holidu-priset kunde inte läsas.",
+  dep:"250 € kontant",
+  cancel:"Gratis före 15 maj 2027 (Booking.com)",
+  rating:"Holidu 9,7 (18 omdömen) · Booking 7,6 (6 omdömen)",
+  extra:"El debiteras efter förbrukning, 0,25 €/kWh.",
+  warn:""},
+ 
+ {fit:9, st:"no", name:"Sa Garrigueta FH", place:"Galilea", km:19.9, min:29, taxi:180, eur:5125,
+  img:[BI("r","530445417","11121bb924f6b6d818b9f814df6694afc303c6a474943ade975b0c9d4d32abe0")],
+  links:[["Booking.com",B("sa-garrigueta-fh-stunning-views")]],
+  badge:"Faller bort: minimiålder 25",
+  age:"Minimiålder för incheckning är 25. Tar inte emot svensexor, möhippor eller liknande.",
+  quiet:"Ej angivet.",
+  party:"Inte tillåtet.",
+  pool:"Ja, privat med havsutsikt",
+  cap:"10 gäster · 5 sovrum (varav ett med bäddsoffor) · 3 badrum · 190 m²",
+  price:"5 125 € ej återbetalningsbart eller 5 677 € med fri avbokning",
+  dep:"450 € kontant",
+  cancel:"Gratis före 15 april 2027 på det flexibla priset",
+  rating:"9,6 (9 omdömen)",
+  extra:"",
+  warn:""},
+ 
+ {fit:10, st:"no", name:"Los Abilios", place:"Sa Indioteria, Palma", km:22.0, min:21, taxi:195, eur:4759,
+  img:["https://img.holidu.com/images/902ab6e5-07e2-4617-bf05-f12c586aa168/t.jpg",
+       BI("q","693233949","7f71811852b9693763d14d8f308b935d06f6cd261cc99dad2b8394f8058c7fc0")],
+  links:[["Holidu (annons 1)",H("60104229")],["Holidu (annons 2)",H("63950357")],["Booking.com",B("los-abilios-villa-5starshome-mallorca")]],
+  badge:"Faller bort: minimiålder 25",
+  age:"Holidu nämner ingen gräns, men samma villa på Booking.com har minimiålder 25 och tar inte emot svensexor eller liknande.",
+  quiet:"Ej angivet.",
+  party:"Inte tillåtet.",
+  pool:"Ja, privat (6 × 3,5 m)",
+  cap:"10 gäster · 6 sovrum · 4 badrum",
+  price:"Booking 4 759 € ej återbetalningsbart. Holidu-priset kunde inte läsas.",
+  dep:"300 €",
+  cancel:"Ej återbetalningsbart på Booking.com",
+  rating:"Holidu 9,0–10 (2 omdömen per annons)",
+  extra:"Turistskatt 2,20 € per person och natt vid nyckelöverlämning.",
+  warn:"Dina två Holidu-länkar går till samma hus."}
+];
+ 
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const eur = n => n.toLocaleString("sv-SE").replace(/ /g," ") + " €";
+ 
+function imgFail(el){
+  const rest = JSON.parse(el.dataset.rest || "[]");
+  if(rest.length){ el.dataset.rest = JSON.stringify(rest.slice(1)); el.src = rest[0]; return; }
+  const ph = document.createElement("div");
+  ph.className = "ph";
+  ph.innerHTML = "<b>" + esc(el.alt) + "</b><span>Bilden kunde inte laddas här – öppna annonsen för foton</span>";
+  el.replaceWith(ph);
+}
+ 
+function card(v){
+  const row = (k,val) => val ? `<dt>${k}</dt><dd>${esc(val)}</dd>` : "";
+  const week = v.eur ? `<dt>Villa + taxi</dt><dd>ca ${eur(Math.round((v.eur + v.taxi*7)/50)*50)} med taxi alla 7 kvällar</dd>` : "";
+  return `<article data-st="${v.st}">
+    <a class="cover" href="${esc(v.links[0][1])}" target="_blank" rel="noopener" aria-label="Öppna ${esc(v.name)} på ${esc(v.links[0][0])}">
+      <img src="${esc(v.img[0])}" data-rest='${esc(JSON.stringify(v.img.slice(1)))}' alt="${esc(v.name)}" loading="lazy" referrerpolicy="no-referrer" onerror="imgFail(this)">
+      <span class="go">Öppna på ${esc(v.links[0][0].replace(/ \(.*/,""))} ↗</span>
+    </a>
+    <div class="dist">${v.approx?"ca ":""}${String(v.km).replace(".",",")} km till Magaluf centrum
+      <small>ca ${v.min} min med bil · taxi tur och retur ca ${v.taxi} € per kväll (3 bilar)</small></div>
+    <div class="body">
+      <div><h3>${esc(v.name)}</h3><div class="place">${esc(v.place)}</div></div>
+      <div><span class="badge ${v.st}">${esc(v.badge)}</span></div>
+      <dl>
+        ${row("Ålder / grupper", v.age)}
+        ${row("Tysta timmar", v.quiet)}
+        ${row("Fester", v.party)}
+        ${row("Pool", v.pool)}
+        ${row("Platser", v.cap)}
+        ${row("Pris för veckan", v.price)}
+        ${week}
+        ${row("Deposition", v.dep)}
+        ${row("Avbokning", v.cancel)}
+        ${row("Betyg", v.rating)}
+        ${row("Övrigt", v.extra)}
+      </dl>
+      ${v.warn ? `<div class="warn"><b>Att tänka på:</b> ${esc(v.warn)}</div>` : ""}
+      <div class="links">${v.links.map(l => `<a href="${esc(l[1])}" target="_blank" rel="noopener">${esc(l[0])} ↗</a>`).join("")}</div>
+    </div>
+  </article>`;
+}
+ 
+let f = "all", s = "fit";
+function render(){
+  let list = villas.filter(v => f === "all" || (f === "no" ? v.st === "no" : v.st !== "no"));
+  list = list.slice().sort((a,b) =>
+    s === "dist" ? a.km - b.km :
+    s === "price" ? (a.eur ?? 1e9) - (b.eur ?? 1e9) :
+    a.fit - b.fit);
+  document.getElementById("grid").innerHTML = list.map(card).join("");
+}
+document.querySelectorAll(".bar button").forEach(b => b.addEventListener("click", () => {
+  const key = b.dataset.f ? "f" : "s";
+  if(key === "f") f = b.dataset.f; else s = b.dataset.s;
+  document.querySelectorAll(`.bar button[data-${key}]`).forEach(x => x.setAttribute("aria-pressed", x === b));
+  render();
+}));
+render();
+</script>
+</body>
+</html>
+ 
